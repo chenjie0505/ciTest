@@ -16,3 +16,5 @@ def readURL(url):
 	response = urllib.urlopen(url)
 	content = response.read()
 	return content
+
+loadData()

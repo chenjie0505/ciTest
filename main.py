@@ -17,4 +17,3 @@ def readURL(url):
 	content = response.read()
 	return content
 
-loadData()

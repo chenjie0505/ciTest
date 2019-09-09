@@ -5,7 +5,7 @@ def loadData():
 	i = 1
 	total = 1000
 	while i*100<total+100:
-		issues_url = 'https://api.github.com/search/issues?q=language:python+label:performance+state:closed+created:2019-01-01..2019-02-01&sort=created&order=asc&page=%s&per_page=100'%(i)
+		issues_url = 'https://api.github.com/search/issues?q=label:performance+state:closed+created:2019-01-01..2019-02-01&sort=created&order=asc&page=%s&per_page=100'%(i)
 		issues = readURL(issues_url)
 		issues = issues and json.loads(issues)
 		total = issues['total_count']

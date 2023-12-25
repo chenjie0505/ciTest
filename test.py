@@ -1,4 +1,4 @@
-import pytest
+import pytest, pytest_benchmark
 
 def fib(n):
     if n <= 1:
